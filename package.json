@@ -1,9 +1,12 @@
 {
+  "homepage": "https://quake-patel.github.io/pokedex",
   "name": "pokedex",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "predeploy":"npm run build",
+    "depl":"gh-pages -d build",
     "build": "vite build",
     "preview": "vite preview"
   },
