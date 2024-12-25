@@ -1,4 +1,6 @@
 {
+  "homepage": "https://quake-patel.github.io/pokedex",
+  "name": "pokedex",
   "private": true,
   "version": "0.0.0",
   "scripts": {
