@@ -109,3 +109,6 @@ nav ul li:hover {
 .pokemon-detail-wrapper img {
   max-width: 500px;
 }
+.pokemon-img img {
+  width: 200px;
+}

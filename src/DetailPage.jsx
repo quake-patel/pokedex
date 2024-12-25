@@ -3,7 +3,10 @@ import { useLocation } from "react-router-dom";
 const DetailPage = () => {
   const location = useLocation();
   const { seasonInfo } = location.state.pokemon.name || {};
-  // console.log(location.state.pokemon.url.types[0]);
+  console.log(
+    location.state.pokemon.url.sprites.versions["generation-v"]["black-white"]
+      .animated.front_default
+  );
   return (
     <div className='pokemon-detail-wrapper'>
       <div className='pokemon-name'>
@@ -16,6 +19,22 @@ const DetailPage = () => {
         </h2>
       </div>
       <div className='pokemon-img'>
+        <img
+          src={
+            location.state.pokemon.url.sprites.versions["generation-v"][
+              "black-white"
+            ].animated.front_default
+          }
+          alt=''
+        />
+        <img
+          src={
+            location.state.pokemon.url.sprites.versions["generation-v"][
+              "black-white"
+            ].animated.back_default
+          }
+          alt=''
+        />
         <img
           src={
             location.state.pokemon.url.sprites.other["official-artwork"]
